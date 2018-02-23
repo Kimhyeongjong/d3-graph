@@ -1,0 +1,106 @@
+/** 그래프를 그리는 svg 태그의 id  */
+#d3gp {
+    width: 100%;
+    height: 100%;
+    background-color: #102542;
+}
+
+/* 노드 선택시 변경되는 색상 */
+.node .selected {
+
+  fill: green;
+  stroke-width:1px;
+
+}
+
+.link line {
+/*     stroke: yellow; */
+    stroke-opacity: 0.6;
+}
+
+.labels text {
+    pointer-events: none;
+/*  font: 10px sans-serif; */
+}
+
+path.link, path.textpath {
+    fill: none;
+/*     stroke: #cccccc; */
+    stroke-width: "2px";
+}
+
+path.invis {
+    fill: none;
+    stroke-width: 0;
+}
+
+.zoom {
+    cursor:pointer;
+    fill: none;
+    pointer-events: all;
+}
+
+
+/* Support sub menu */
+.menu
+{
+    border: 1px solid black;
+    background-color: black;
+    display: none;
+    position: relative;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+.menu,
+.menu li {
+  padding: 0px;
+  margin: 0px;
+}
+.menu li {
+  color: white;
+}
+.menu > li:hover {
+  cursor:pointer;
+  color: yellow;
+}
+.menu li {
+  display: none;
+}
+
+.menu.circle li.circle
+{
+  display: block;
+}
+
+
+.menu li ul {
+  display:none;
+}
+.menu li:hover ul {
+  display:inline-block;
+  position: relative;
+  top: 0;
+}
+
+li.color {
+  width: 30px;
+  height: 20px;
+}
+li.color-1 {
+  background-color: red;
+}
+li.color:hover {
+  opacity: 0.5;
+}
+li.color-2 {
+  background-color: green;
+}
+
+/* Edge Arrow */
+#end-arrow {
+  fill: white;
+}
+
